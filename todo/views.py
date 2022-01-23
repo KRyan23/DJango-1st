@@ -1,6 +1,6 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 # Create your tests here.
 
-def sayhello(request):
-    return HttpResponse("hello")
+def get_todo_list(request):
+    return render(request,'todo/todo_list.html')
